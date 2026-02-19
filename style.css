@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    height: 8vh;
+    padding: 20px;
+    color : rgb(201, 145, 145);
+    text-align: center;
+}
+
+.header ul {
+    list-style : none;
+    display : flex;
+    gap : 50px;
+    justify-content: center;
+    font-size: 18px;
+}
+.nav {
+    height: 80vh;
+    background-image: url(Img/balenciaga-cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero {
+    background-image: url(Img/https___hypebeast.com_wp-content_blogs.dir_6_files_2018_10_enfants-riches-deprimes-spring-2019-0.avif);;
+    height: 50vh;
+    padding : 40px;
+}
+
+.hero button {
+    padding : 10px 20px;
+    background-color: rgb(187, 14, 14);
+    color : white;
+    border-radius: 5px;
+    cursor : pointer;
+    font-size: 16px;
+}
+
+.Cta {
+    background-color: rgb(131, 116, 167);
+    height: 12vh;
+    padding : 20px;
+
+
+    text-align: center;
+    
+}
+
+.scroll-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.products {
+    display : flex;
+    gap : 20px;
+    padding : 20px;
+    flex-wrap : wrap;
+}
+
+.product {
+    flex : 1 1 calc(33.333% - 20px);
+    border : 1px solid #ccc;
+    padding : 20px;
+}
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    height : 500px;
+    object-fit: contain;
+}
+.footer {
+    background-color: rgb(255, 255, 255);
+    height: 8vh;
+    padding: 20px;
+    color : rgb(201, 145, 145);
+    text-align: center;
+}
