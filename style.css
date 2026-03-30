@@ -5,13 +5,7 @@
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
 }
-a{
-    color: black;
-    text-decoration: none;
-}
-a:visited {
-    color: black;
-}
+
 .header{
     background-color: rgb(255, 255, 255);
     height: 8vh;
@@ -69,6 +63,13 @@ a:visited {
     border-radius: 5px;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
 .products {
     display : flex;
     gap : 20px;
@@ -93,4 +94,13 @@ a:visited {
     padding: 20px;
     color : rgb(201, 145, 145);
     text-align: center;
+}
+.hidden {
+    display: none;
+}
+#filtermenu {
+    margin-top : 10px;
+    display : flex;
+    flex-direction : row;
+    gap: 5px;
 }

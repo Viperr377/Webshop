@@ -16,7 +16,17 @@
         <li><a href="#">Kinderen</a></li>
        </ul>
   </header>
-   <nav class="nav"></nav>
+   <nav class="nav">
+    <div class = "filters">
+      <button class="filter-btn" data-category="All">Alle Producten</button>
+      <button class="filter-btn" data-category="T-shirts">T-shirts</button>
+      <button class="filter-btn" data-category="Hoodies">Hoodies</button>
+      <button class="filter-btn" data-category="Shoes">Shoes</button>
+    </div>
+    <div class= "search">
+      <input type="text" id="searchInput" placeholder="Zoek producten...">5
+  </div>
+   </nav>
   <main>
     <section class="Cta">
       <h2>Speciale Aanbieding</h2>
@@ -28,51 +38,72 @@
     </section>
 
     <section class="products" id="target-section">
-      <article class="product">
+      <article class="product" data-category="T-shirts">
         <a href="#">
-        <div class="product-image"><img src="Img/Img.webp" alt=""></div>
+        <div class="product-image"><img src="Img/Img.webp" alt="T-shirt"></div>
         <h4>T-shirt Balenciaga</h4>
         <p>200 €</p>
         </a>
       </article>
       
-      <article class="product">
+      <article class="product" data-category="Hoodies">
         <a href="#">
-        <div class="product-image"><img src="Img/Hoodie.webp" alt=""></div>
+        <div class="product-image"><img src="Img/Hoodie.webp" alt="Hoodie"></div>
         <h4>Mountain hoodie Rick Owens</h4>
         <p>300 €</p>
         </a>
       </article>
 
-      <article class="product">
+      <article class="product" data-category="Hoodies">
         <a href="#">
-        <div class="product-image"><img src="Img/Hoodie2.jpg" alt=""></div>
+        <div class="product-image"><img src="Img/Hoodie2.jpg" alt="Hoodie"></div>
         <h4>Hoodie Balenciaga</h4>
         <p>400 €</p>
         </a>
       </article>
       
-      <article class="product">
+      <article class="product" data-category="Hoodies">
         <a href="#">
-        <div class="product-image"><img src="Img/Hoodie3.jpg" alt=""></div>
+        <div class="product-image"><img src="Img/Hoodie3.jpg" alt="Hoodie"></div>
         <h4>Hoodie Enfants Riches Déprimés</h4>
         <p>500 €</p>
         </a>
       </article>
   
-      <article class="product">
+      <article class="product" data-category="T-shirts">
         <a href="#">
-        <div class="product-image"><img src="Img/T-shirt.webp" alt=""></div>
+        <div class="product-image"><img src="Img/T-shirt.webp" alt="T-shirt"></div>
         <h4>T-shirt Vetements</h4>
         <p>350 €</p>
         </a>
       </article>
     
-      <article class="product">
+      <article class="product" data-category="T-shirts">
         <a href="#">
-        <div class="product-image"><img src="Img/T-shirt2.jpeg" alt=""></div>
+        <div class="product-image"><img src="Img/T-shirt2.jpeg" alt="T-shirt"></div>
         <h4>T-shirt Enfants Riches Déprimés</h4>
         <p>400 €</p>
+        </a>
+      </article>
+      <article class="product" data-category="Shoes">
+        <a href="#">
+        <div class="product-image"><img src="Img/Rick owens shoes.webp" alt="Shoes"></div>
+        <h4>Rick Owens Geobasket</h4>
+        <p>450 €</p>
+        </a>
+      </article>
+      <article class="product" data-category="Shoes">
+        <a href="#">
+        <div class="product-image"><img src="Img/MM shoes.webp" alt="Shoes"></div>
+        <h4>Maison Margiela evolution</h4>
+        <p>500 €</p>
+        </a>
+      </article>
+      <article class="product" data-category="Shoes">
+        <a href="#">
+        <div class="product-image"><img src="Img/Balenciaga shoes.webp" alt="Shoes"></div>
+        <h4>Balenciaga Runner</h4>
+        <p>350 €</p>
         </a>
       </article>
     </section>
