@@ -39,3 +39,20 @@ searchInput.addEventListener('keydown', e => {
     });
 }
 });
+
+function addToCart(productName, productPrice) {
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  let index = cart.findIndex((element) => element.name === productName);
+  const price = Number(productPrice);
+
+  if(index >= 0) {
+    cart[index].amount += 1;
+  }else{
+    cart.push({
+      name: productName,
+      amount: 1,
+      price: productPrice
+    });
+  }
+  localStorage.setItem('cart', JSON.stringify(cart));
+}

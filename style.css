@@ -14,11 +14,31 @@
     text-align: center;
 }
 
+.filter-btn {
+    padding: 10px 20px;
+    background-color: rgb(131, 116, 167);
+    color : white;
+    border-radius: 5px;
+    cursor : pointer;
+    font-size: 12px;
+}
+
+#searchInput {
+  width: 20.6%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid rgb(131, 116, 167);
+  border-radius: 5px;
+  outline: none;
+  background: #000000;
+  color: #9E9C9C;
+}
+
 .header ul {
     list-style : none;
     display : flex;
     gap : 50px;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 18px;
 }
 .nav {
@@ -96,11 +116,89 @@ a:visited {
     text-align: center;
 }
 .hidden {
-    display: none;
+    display: none;  
 }
+
 #filtermenu {
     margin-top : 10px;
     display : flex;
     flex-direction : row;
     gap: 5px;
+}
+
+.cart-container {
+max-width: 1900px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.cart-container h1 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.cart-product {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.cart-product th {
+    background-color: rgb(143, 78, 143);
+    color: white;
+    padding: 15px;
+}
+
+.cart-product td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cart-product td:nth-child(1) { width: 45%; }
+.cart-product td:nth-child(2),
+.cart-product td:nth-child(3) { width: 20%; }
+
+.cart-total {
+    text-align: right;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.cart-total span { 
+  color: rgb(187, 14, 14); 
+  font-weight: bold; 
+  font-size: 20px; 
+}
+
+#checkoutBtn {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 55);
+    color: Black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#checkoutBtn:hover {
+    background-color: rgb(214, 214, 0);
+}
+
+.change-amount-btn {
+    padding: 6px 12px;
+    margin: 0 4px;
+    background-color: rgb(143, 78, 143);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    min-width: 24px;
+}
+
+.change-amount-btn:hover {
+    background-color: rgb(120, 58, 120);
 }
